@@ -8,8 +8,8 @@ rm -rf ~/xLog/
 echo Installing dependencies...
 pkg upd -y
 pkg upgr -y
-pkg i git libvips redis postgresql nodejs goose patch python python-pip binutils x11-repo -y
-pkg i xorgproto -y
+pkg i git libvips redis postgresql nodejs goose patch python python-pip binutils xorgproto x11-repo -y
+
 # pip3 config set global.index-url https://pypi.doubanio.com/simple
 if [ -d "~/xLog" ];then
         echo Removing old xLog directory...
