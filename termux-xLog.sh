@@ -67,9 +67,9 @@ echo Running redis...
 redis-server &
 clear
 echo Exporting Run Script...
-echo "#!/data/data/com.termux/files/usr/bin/bash" > ~/xLog/run.sh
-echo "cd ~/xLog" >> ~/xLog/run.sh
-echo "redis-server | pg_ctl -D $PREFIX/var/lib/postgresql start --silent | pnpm dev" >> ~/xLog/run.sh
+echo '#!/data/data/com.termux/files/usr/bin/bash' > ~/xLog/run.sh
+echo 'cd ~/xLog' >> ~/xLog/run.sh
+echo 'redis-server | pg_ctl -D $PREFIX/var/lib/postgresql start --silent | pnpm dev' >> ~/xLog/run.sh
 chmod +x ~/xLog/run.sh
 clear
 echo Running xLog...
