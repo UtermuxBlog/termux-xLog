@@ -15,3 +15,6 @@ chmod +x termux-xLog.sh
 cd ~/xLog
 ./run.sh
 ```
+
+# See also
+[xLog-mobile](https://github.com/Crossbell-Box/xLog-mobile)
