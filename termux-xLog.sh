@@ -10,7 +10,7 @@ pkg upd -y
 pkg upgr -y
 pkg i git libvips redis postgresql nodejs goose patch python python-pip binutils x11-repo -y
 pkg i xorgproto -y
-pip3 config set global.index-url https://pypi.doubanio.com/simple
+# pip3 config set global.index-url https://pypi.doubanio.com/simple
 if [ -d "~/xLog" ];then
         echo Removing old xLog directory...
         rm -rf ~/xLog
@@ -21,7 +21,7 @@ git clone https://github.com/Crossbell-Box/xLog xLog
 cd ~/xLog
 clear
 echo Installing pnpm...
-npm config set registry https://registry.npmmirror.com/ --global
+# npm config set registry https://registry.npmmirror.com/ --global
 npm i -g pnpm
 clear
 echo Replacing include paths...
@@ -30,9 +30,9 @@ sed -i 's/<glib\//<glib-2.0\/glib\//g' $PREFIX/include/glib-2.0/glib.h
 sed -i 's/<gobject/<glib-2.0\/gobject/g' $PREFIX/include/glib-2.0/glib-object.h
 clear
 echo Installing node.js modules...
-pnpm config set registry https://registry.npmmirror.com/ --global
-pnpm config set sharp_binary_host "https://npmmirror.com/mirrors/sharp"
-pnpm config set sharp_libvips_binary_host "https://npmmirror.com/mirrors/sharp-libvips"
+# pnpm config set registry https://registry.npmmirror.com/ --global
+# pnpm config set sharp_binary_host "https://npmmirror.com/mirrors/sharp"
+# pnpm config set sharp_libvips_binary_host "https://npmmirror.com/mirrors/sharp-libvips"
 pnpm i
 clear
 echo Setting postgresql...
