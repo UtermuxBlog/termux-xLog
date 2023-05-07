@@ -17,7 +17,7 @@ if [ -d "~/xLog" ];then
 fi
 echo Cloning repository...
 cd $HOME
-git clone https://github.com/Crossbell-Box/xLog xLog
+git clone https://kgithub.com/Crossbell-Box/xLog xLog
 cd ~/xLog
 clear
 echo Installing pnpm...
