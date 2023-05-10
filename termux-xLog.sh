@@ -74,4 +74,5 @@ chmod +x ~/xLog/run.sh
 clear
 echo Running xLog...
 mv .env.example .env
+export NODE_OPTIONS="--max-old-space-size=8192"
 pnpm dev
